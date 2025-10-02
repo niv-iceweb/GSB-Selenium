@@ -1,0 +1,125 @@
+2025-09-30 18:21:18 | ERROR    | gsb_selenium.utils.logger:log_error:87 - [main] Search failed: Message: session not created: cannot connect to chrome at 127.0.0.1:49237
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+0   undetected_chromedriver             0x000000010556f908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x000000010556700a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000104fc2c33 undetected_chromedriver + 429107
+3   undetected_chromedriver             0x0000000104fae7c2 undetected_chromedriver + 346050
+4   undetected_chromedriver             0x0000000105002fa9 undetected_chromedriver + 692137
+5   undetected_chromedriver             0x0000000104ff83ad undetected_chromedriver + 648109
+6   undetected_chromedriver             0x00000001050494b1 undetected_chromedriver + 980145
+7   undetected_chromedriver             0x0000000105048b46 undetected_chromedriver + 977734
+8   undetected_chromedriver             0x000000010503aea3 undetected_chromedriver + 921251
+9   undetected_chromedriver             0x000000010500739a undetected_chromedriver + 709530
+10  undetected_chromedriver             0x0000000105008061 undetected_chromedriver + 712801
+11  undetected_chromedriver             0x000000010552d7b0 undetected_chromedriver + 6109104
+12  undetected_chromedriver             0x0000000105531635 undetected_chromedriver + 6125109
+13  undetected_chromedriver             0x0000000105508c67 undetected_chromedriver + 5958759
+14  undetected_chromedriver             0x00000001055320af undetected_chromedriver + 6127791
+15  undetected_chromedriver             0x00000001054f7fe4 undetected_chromedriver + 5890020
+16  undetected_chromedriver             0x0000000105554258 undetected_chromedriver + 6267480
+17  undetected_chromedriver             0x000000010555441c undetected_chromedriver + 6267932
+18  undetected_chromedriver             0x0000000105566be1 undetected_chromedriver + 6343649
+19  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-30 18:22:59 | ERROR    | gsb_selenium.utils.logger:log_error:87 - [main] Search failed: Message: session not created: cannot connect to chrome at 127.0.0.1:50403
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+0   undetected_chromedriver             0x00000001053b4908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x00000001053ac00a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000104e07c33 undetected_chromedriver + 429107
+3   undetected_chromedriver             0x0000000104df37c2 undetected_chromedriver + 346050
+4   undetected_chromedriver             0x0000000104e47fa9 undetected_chromedriver + 692137
+5   undetected_chromedriver             0x0000000104e3d3ad undetected_chromedriver + 648109
+6   undetected_chromedriver             0x0000000104e8e4b1 undetected_chromedriver + 980145
+7   undetected_chromedriver             0x0000000104e8db46 undetected_chromedriver + 977734
+8   undetected_chromedriver             0x0000000104e7fea3 undetected_chromedriver + 921251
+9   undetected_chromedriver             0x0000000104e4c39a undetected_chromedriver + 709530
+10  undetected_chromedriver             0x0000000104e4d061 undetected_chromedriver + 712801
+11  undetected_chromedriver             0x00000001053727b0 undetected_chromedriver + 6109104
+12  undetected_chromedriver             0x0000000105376635 undetected_chromedriver + 6125109
+13  undetected_chromedriver             0x000000010534dc67 undetected_chromedriver + 5958759
+14  undetected_chromedriver             0x00000001053770af undetected_chromedriver + 6127791
+15  undetected_chromedriver             0x000000010533cfe4 undetected_chromedriver + 5890020
+16  undetected_chromedriver             0x0000000105399258 undetected_chromedriver + 6267480
+17  undetected_chromedriver             0x000000010539941c undetected_chromedriver + 6267932
+18  undetected_chromedriver             0x00000001053abbe1 undetected_chromedriver + 6343649
+19  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-30 18:56:55 | ERROR    | gsb_selenium.utils.logger:log_error:87 - [main] Error performing search: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=140.0.7339.213); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+0   undetected_chromedriver             0x00000001012ce908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x00000001012c600a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000100d21df0 undetected_chromedriver + 429552
+3   undetected_chromedriver             0x0000000100d0884d undetected_chromedriver + 325709
+4   undetected_chromedriver             0x0000000100d30b0d undetected_chromedriver + 490253
+5   undetected_chromedriver             0x0000000100da247f undetected_chromedriver + 955519
+6   undetected_chromedriver             0x0000000100dc0f4c undetected_chromedriver + 1081164
+7   undetected_chromedriver             0x0000000100d99ea3 undetected_chromedriver + 921251
+8   undetected_chromedriver             0x0000000100d6639a undetected_chromedriver + 709530
+9   undetected_chromedriver             0x0000000100d67061 undetected_chromedriver + 712801
+10  undetected_chromedriver             0x000000010128c7b0 undetected_chromedriver + 6109104
+11  undetected_chromedriver             0x0000000101290635 undetected_chromedriver + 6125109
+12  undetected_chromedriver             0x0000000101267c67 undetected_chromedriver + 5958759
+13  undetected_chromedriver             0x00000001012910af undetected_chromedriver + 6127791
+14  undetected_chromedriver             0x0000000101256fe4 undetected_chromedriver + 5890020
+15  undetected_chromedriver             0x00000001012b3258 undetected_chromedriver + 6267480
+16  undetected_chromedriver             0x00000001012b341c undetected_chromedriver + 6267932
+17  undetected_chromedriver             0x00000001012c5be1 undetected_chromedriver + 6343649
+18  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+19  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-30 20:06:51 | ERROR    | gsb_selenium.utils.logger:log_error:87 - [main] Search failed: Message: session not created: cannot connect to chrome at 127.0.0.1:57026
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+0   undetected_chromedriver             0x00000001008fe908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x00000001008f600a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000100351c33 undetected_chromedriver + 429107
+3   undetected_chromedriver             0x000000010033d7c2 undetected_chromedriver + 346050
+4   undetected_chromedriver             0x0000000100391fa9 undetected_chromedriver + 692137
+5   undetected_chromedriver             0x00000001003873ad undetected_chromedriver + 648109
+6   undetected_chromedriver             0x00000001003d84b1 undetected_chromedriver + 980145
+7   undetected_chromedriver             0x00000001003d7b46 undetected_chromedriver + 977734
+8   undetected_chromedriver             0x00000001003c9ea3 undetected_chromedriver + 921251
+9   undetected_chromedriver             0x000000010039639a undetected_chromedriver + 709530
+10  undetected_chromedriver             0x0000000100397061 undetected_chromedriver + 712801
+11  undetected_chromedriver             0x00000001008bc7b0 undetected_chromedriver + 6109104
+12  undetected_chromedriver             0x00000001008c0635 undetected_chromedriver + 6125109
+13  undetected_chromedriver             0x0000000100897c67 undetected_chromedriver + 5958759
+14  undetected_chromedriver             0x00000001008c10af undetected_chromedriver + 6127791
+15  undetected_chromedriver             0x0000000100886fe4 undetected_chromedriver + 5890020
+16  undetected_chromedriver             0x00000001008e3258 undetected_chromedriver + 6267480
+17  undetected_chromedriver             0x00000001008e341c undetected_chromedriver + 6267932
+18  undetected_chromedriver             0x00000001008f5be1 undetected_chromedriver + 6343649
+19  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-30 20:18:26 | ERROR    | gsb_selenium.utils.logger:log_error:87 - [main] Search failed: Message: session not created: cannot connect to chrome at 127.0.0.1:60288
+from chrome not reachable; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+0   undetected_chromedriver             0x0000000104ea4908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x0000000104e9c00a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x00000001048f7c33 undetected_chromedriver + 429107
+3   undetected_chromedriver             0x00000001048e37c2 undetected_chromedriver + 346050
+4   undetected_chromedriver             0x0000000104937fa9 undetected_chromedriver + 692137
+5   undetected_chromedriver             0x000000010492d3ad undetected_chromedriver + 648109
+6   undetected_chromedriver             0x000000010497e4b1 undetected_chromedriver + 980145
+7   undetected_chromedriver             0x000000010497db46 undetected_chromedriver + 977734
+8   undetected_chromedriver             0x000000010496fea3 undetected_chromedriver + 921251
+9   undetected_chromedriver             0x000000010493c39a undetected_chromedriver + 709530
+10  undetected_chromedriver             0x000000010493d061 undetected_chromedriver + 712801
+11  undetected_chromedriver             0x0000000104e627b0 undetected_chromedriver + 6109104
+12  undetected_chromedriver             0x0000000104e66635 undetected_chromedriver + 6125109
+13  undetected_chromedriver             0x0000000104e3dc67 undetected_chromedriver + 5958759
+14  undetected_chromedriver             0x0000000104e670af undetected_chromedriver + 6127791
+15  undetected_chromedriver             0x0000000104e2cfe4 undetected_chromedriver + 5890020
+16  undetected_chromedriver             0x0000000104e89258 undetected_chromedriver + 6267480
+17  undetected_chromedriver             0x0000000104e8941c undetected_chromedriver + 6267932
+18  undetected_chromedriver             0x0000000104e9bbe1 undetected_chromedriver + 6343649
+19  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+

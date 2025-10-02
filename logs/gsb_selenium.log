@@ -1,0 +1,931 @@
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:239 - Configuration validation:
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:240 -   Search term: marketing services
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:241 -   Target website: None
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:242 -   Headless mode: False
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:243 -   Screenshots: True
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:244 -   Human behavior: True
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:245 -   Use undetected Chrome: True
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:246 -   CAPTCHA solver: Disabled
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:247 -   MongoDB: Enabled
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:250 -   Proxy: us-pr.oxylabs.io
+2025-09-24 21:16:03 | INFO     | gsb_selenium.cli:validate_config:254 - Configuration validation completed
+2025-09-24 21:18:14 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:18:14 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-24 21:18:14 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_selenium.search_terms
+2025-09-24 21:18:14 | WARNING  | gsb_selenium.utils.mongo_search_manager:_load_terms:103 - No documents found in MongoDB collection
+2025-09-24 21:18:14 | WARNING  | gsb_selenium.utils.mongo_search_manager:_load_from_file:122 - No fallback file found, creating default terms
+2025-09-24 21:18:14 | INFO     | gsb_selenium.utils.mongo_search_manager:_create_default_terms:139 - Created default search terms
+2025-09-24 21:18:14 | INFO     | gsb_selenium.core.gsb:__init__:50 - No 2Captcha API key provided - captcha solving disabled
+2025-09-24 21:18:14 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:18:14 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:18:14 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 5 searches
+2025-09-24 21:18:14 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/5
+2025-09-24 21:18:14 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_9522_cli
+2025-09-24 21:18:17 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_9522_cli
+2025-09-24 21:18:17 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:19:55 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:19:55 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-24 21:19:57 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:19:58 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:19:58 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:19:58 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:19:58 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:19:58 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:19:58 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 8 searches
+2025-09-24 21:19:58 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/8
+2025-09-24 21:19:58 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_2272_cli
+2025-09-24 21:20:01 | ERROR    | gsb_selenium.core.gsb:_create_stealth_driver:167 - Failed to create stealth driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+0   undetected_chromedriver             0x0000000100687908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x000000010067f00a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x00000001000dadf0 undetected_chromedriver + 429552
+3   undetected_chromedriver             0x0000000100107e4f undetected_chromedriver + 613967
+4   undetected_chromedriver             0x00000001001093e5 undetected_chromedriver + 619493
+5   undetected_chromedriver             0x0000000100104496 undetected_chromedriver + 599190
+6   undetected_chromedriver             0x000000010015f80c undetected_chromedriver + 972812
+7   undetected_chromedriver             0x000000010015f14e undetected_chromedriver + 971086
+8   undetected_chromedriver             0x0000000100160d93 undetected_chromedriver + 978323
+9   undetected_chromedriver             0x0000000100160b46 undetected_chromedriver + 977734
+10  undetected_chromedriver             0x0000000100152ea3 undetected_chromedriver + 921251
+11  undetected_chromedriver             0x000000010011f39a undetected_chromedriver + 709530
+12  undetected_chromedriver             0x0000000100120061 undetected_chromedriver + 712801
+13  undetected_chromedriver             0x00000001006457b0 undetected_chromedriver + 6109104
+14  undetected_chromedriver             0x0000000100649635 undetected_chromedriver + 6125109
+15  undetected_chromedriver             0x0000000100620c67 undetected_chromedriver + 5958759
+16  undetected_chromedriver             0x000000010064a0af undetected_chromedriver + 6127791
+17  undetected_chromedriver             0x000000010060ffe4 undetected_chromedriver + 5890020
+18  undetected_chromedriver             0x000000010066c258 undetected_chromedriver + 6267480
+19  undetected_chromedriver             0x000000010066c41c undetected_chromedriver + 6267932
+20  undetected_chromedriver             0x000000010067ebe1 undetected_chromedriver + 6343649
+21  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+22  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-24 21:20:01 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+0   undetected_chromedriver             0x0000000100687908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x000000010067f00a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x00000001000dadf0 undetected_chromedriver + 429552
+3   undetected_chromedriver             0x0000000100107e4f undetected_chromedriver + 613967
+4   undetected_chromedriver             0x00000001001093e5 undetected_chromedriver + 619493
+5   undetected_chromedriver             0x0000000100104496 undetected_chromedriver + 599190
+6   undetected_chromedriver             0x000000010015f80c undetected_chromedriver + 972812
+7   undetected_chromedriver             0x000000010015f14e undetected_chromedriver + 971086
+8   undetected_chromedriver             0x0000000100160d93 undetected_chromedriver + 978323
+9   undetected_chromedriver             0x0000000100160b46 undetected_chromedriver + 977734
+10  undetected_chromedriver             0x0000000100152ea3 undetected_chromedriver + 921251
+11  undetected_chromedriver             0x000000010011f39a undetected_chromedriver + 709530
+12  undetected_chromedriver             0x0000000100120061 undetected_chromedriver + 712801
+13  undetected_chromedriver             0x00000001006457b0 undetected_chromedriver + 6109104
+14  undetected_chromedriver             0x0000000100649635 undetected_chromedriver + 6125109
+15  undetected_chromedriver             0x0000000100620c67 undetected_chromedriver + 5958759
+16  undetected_chromedriver             0x000000010064a0af undetected_chromedriver + 6127791
+17  undetected_chromedriver             0x000000010060ffe4 undetected_chromedriver + 5890020
+18  undetected_chromedriver             0x000000010066c258 undetected_chromedriver + 6267480
+19  undetected_chromedriver             0x000000010066c41c undetected_chromedriver + 6267932
+20  undetected_chromedriver             0x000000010067ebe1 undetected_chromedriver + 6343649
+21  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+22  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-24 21:20:01 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_2272_cli
+2025-09-24 21:20:01 | INFO     | gsb_selenium.core.gsb:_wait_between_searches:293 - Waiting 87.7s before next search
+2025-09-24 21:20:02 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:239 - Configuration validation:
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:240 -   Search term: marketing services
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:241 -   Target website: quizlet.com
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:242 -   Headless mode: False
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:243 -   Screenshots: True
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:244 -   Human behavior: True
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:245 -   Use undetected Chrome: True
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:246 -   CAPTCHA solver: Enabled
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:247 -   MongoDB: Enabled
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:250 -   Proxy: us-pr.oxylabs.io
+2025-09-24 21:20:09 | INFO     | gsb_selenium.cli:validate_config:254 - Configuration validation completed
+2025-09-24 21:20:36 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:20:36 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-24 21:20:38 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:20:38 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:20:38 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:20:38 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:20:38 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:20:38 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:20:38 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-24 21:20:38 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-24 21:20:38 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_4089_cli
+2025-09-24 21:20:41 | ERROR    | gsb_selenium.core.gsb:_create_stealth_driver:167 - Failed to create stealth driver: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+0   undetected_chromedriver             0x0000000105499908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x000000010549100a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000104eecdf0 undetected_chromedriver + 429552
+3   undetected_chromedriver             0x0000000104f19e4f undetected_chromedriver + 613967
+4   undetected_chromedriver             0x0000000104f1b3e5 undetected_chromedriver + 619493
+5   undetected_chromedriver             0x0000000104f16496 undetected_chromedriver + 599190
+6   undetected_chromedriver             0x0000000104f7180c undetected_chromedriver + 972812
+7   undetected_chromedriver             0x0000000104f7114e undetected_chromedriver + 971086
+8   undetected_chromedriver             0x0000000104f72d93 undetected_chromedriver + 978323
+9   undetected_chromedriver             0x0000000104f72b46 undetected_chromedriver + 977734
+10  undetected_chromedriver             0x0000000104f64ea3 undetected_chromedriver + 921251
+11  undetected_chromedriver             0x0000000104f3139a undetected_chromedriver + 709530
+12  undetected_chromedriver             0x0000000104f32061 undetected_chromedriver + 712801
+13  undetected_chromedriver             0x00000001054577b0 undetected_chromedriver + 6109104
+14  undetected_chromedriver             0x000000010545b635 undetected_chromedriver + 6125109
+15  undetected_chromedriver             0x0000000105432c67 undetected_chromedriver + 5958759
+16  undetected_chromedriver             0x000000010545c0af undetected_chromedriver + 6127791
+17  undetected_chromedriver             0x0000000105421fe4 undetected_chromedriver + 5890020
+18  undetected_chromedriver             0x000000010547e258 undetected_chromedriver + 6267480
+19  undetected_chromedriver             0x000000010547e41c undetected_chromedriver + 6267932
+20  undetected_chromedriver             0x0000000105490be1 undetected_chromedriver + 6343649
+21  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+22  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-24 21:20:41 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: Message: invalid argument: cannot parse capability: goog:chromeOptions
+from invalid argument: unrecognized chrome option: excludeSwitches
+Stacktrace:
+0   undetected_chromedriver             0x0000000105499908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x000000010549100a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000104eecdf0 undetected_chromedriver + 429552
+3   undetected_chromedriver             0x0000000104f19e4f undetected_chromedriver + 613967
+4   undetected_chromedriver             0x0000000104f1b3e5 undetected_chromedriver + 619493
+5   undetected_chromedriver             0x0000000104f16496 undetected_chromedriver + 599190
+6   undetected_chromedriver             0x0000000104f7180c undetected_chromedriver + 972812
+7   undetected_chromedriver             0x0000000104f7114e undetected_chromedriver + 971086
+8   undetected_chromedriver             0x0000000104f72d93 undetected_chromedriver + 978323
+9   undetected_chromedriver             0x0000000104f72b46 undetected_chromedriver + 977734
+10  undetected_chromedriver             0x0000000104f64ea3 undetected_chromedriver + 921251
+11  undetected_chromedriver             0x0000000104f3139a undetected_chromedriver + 709530
+12  undetected_chromedriver             0x0000000104f32061 undetected_chromedriver + 712801
+13  undetected_chromedriver             0x00000001054577b0 undetected_chromedriver + 6109104
+14  undetected_chromedriver             0x000000010545b635 undetected_chromedriver + 6125109
+15  undetected_chromedriver             0x0000000105432c67 undetected_chromedriver + 5958759
+16  undetected_chromedriver             0x000000010545c0af undetected_chromedriver + 6127791
+17  undetected_chromedriver             0x0000000105421fe4 undetected_chromedriver + 5890020
+18  undetected_chromedriver             0x000000010547e258 undetected_chromedriver + 6267480
+19  undetected_chromedriver             0x000000010547e41c undetected_chromedriver + 6267932
+20  undetected_chromedriver             0x0000000105490be1 undetected_chromedriver + 6343649
+21  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+22  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-24 21:20:41 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_4089_cli
+2025-09-24 21:20:41 | INFO     | gsb_selenium.core.gsb:run_search_session:132 - Search session completed for instance cli
+2025-09-24 21:20:41 | INFO     | gsb_selenium.utils.profile_manager:cleanup_all_profiles:369 - Cleaned up all profiles for instance cli
+2025-09-24 21:20:41 | INFO     | gsb_selenium.cli:run:97 - Search session completed successfully
+2025-09-24 21:22:23 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:22:23 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-24 21:22:27 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:22:27 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:22:27 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:22:27 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:22:27 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:22:27 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:22:27 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-24 21:22:27 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-24 21:22:27 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_5687_cli
+2025-09-24 21:23:09 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_5687_cli
+2025-09-24 21:23:09 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:25:19 | INFO     | gsb_selenium.cli:test_browser:265 - Testing browser setup...
+2025-09-24 21:25:25 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:25:25 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:25:25 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:25:25 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:25:25 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:25:25 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance browser_test initialized
+2025-09-24 21:25:25 | INFO     | gsb_selenium.cli:test_browser:271 - Creating test browser instance
+2025-09-24 21:25:25 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:80 - Created enhanced Chrome user data directory: Profile_3069_browser_test
+2025-09-24 21:25:34 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:157 - Created stealth driver with profile: Profile_3069_browser_test
+2025-09-24 21:25:34 | INFO     | gsb_selenium.cli:test_browser:275 - Testing Google navigation
+2025-09-24 21:25:45 | INFO     | gsb_selenium.cli:test_browser:281 - Browser test completed successfully
+2025-09-24 21:25:45 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_3069_browser_test
+2025-09-24 21:26:00 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:26:09 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:26:09 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-24 21:26:11 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:26:11 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:26:11 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:26:11 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:26:11 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:26:11 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:26:11 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-24 21:26:11 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-24 21:26:11 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_8877_cli
+2025-09-24 21:26:20 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_8877_cli
+2025-09-24 21:26:20 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:26:28 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:26:28 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-24 21:26:29 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:26:29 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:26:29 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:26:29 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:26:29 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:26:29 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:26:29 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-24 21:26:29 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-24 21:26:29 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_7103_cli
+2025-09-24 21:26:38 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:157 - Created stealth driver with profile: Profile_7103_cli
+2025-09-24 21:26:38 | INFO     | gsb_selenium.core.gsb:_perform_google_search:168 - Navigating to Google
+2025-09-24 21:26:55 | INFO     | gsb_selenium.core.gsb:_perform_google_search:182 - Searching for: lead generation services test
+2025-09-24 21:27:12 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_7103_cli
+2025-09-24 21:27:12 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:30:22 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:30:22 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-24 21:30:25 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:30:25 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:30:25 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:30:25 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:30:25 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:30:25 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:30:25 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-24 21:30:25 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-24 21:30:25 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_8909_cli
+2025-09-24 21:30:34 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:157 - Created stealth driver with profile: Profile_8909_cli
+2025-09-24 21:30:34 | INFO     | gsb_selenium.core.gsb:_perform_google_search:168 - Navigating to Google
+2025-09-24 21:30:41 | ERROR    | gsb_selenium.core.gsb:_perform_google_search:212 - Error performing Google search: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   undetected_chromedriver             0x0000000105043908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x000000010503b00a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000104a96c33 undetected_chromedriver + 429107
+3   undetected_chromedriver             0x0000000104b3f555 undetected_chromedriver + 1119573
+4   undetected_chromedriver             0x0000000104b0f0d2 undetected_chromedriver + 921810
+5   undetected_chromedriver             0x0000000104b3655e undetected_chromedriver + 1082718
+6   undetected_chromedriver             0x0000000104b0eea3 undetected_chromedriver + 921251
+7   undetected_chromedriver             0x0000000104adb39a undetected_chromedriver + 709530
+8   undetected_chromedriver             0x0000000104adc061 undetected_chromedriver + 712801
+9   undetected_chromedriver             0x00000001050017b0 undetected_chromedriver + 6109104
+10  undetected_chromedriver             0x0000000105005635 undetected_chromedriver + 6125109
+11  undetected_chromedriver             0x0000000104fdcc67 undetected_chromedriver + 5958759
+12  undetected_chromedriver             0x00000001050060af undetected_chromedriver + 6127791
+13  undetected_chromedriver             0x0000000104fcbfe4 undetected_chromedriver + 5890020
+14  undetected_chromedriver             0x0000000105028258 undetected_chromedriver + 6267480
+15  undetected_chromedriver             0x000000010502841c undetected_chromedriver + 6267932
+16  undetected_chromedriver             0x000000010503abe1 undetected_chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-24 21:30:41 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   undetected_chromedriver             0x0000000105043908 undetected_chromedriver + 6379784
+1   undetected_chromedriver             0x000000010503b00a undetected_chromedriver + 6344714
+2   undetected_chromedriver             0x0000000104a96c33 undetected_chromedriver + 429107
+3   undetected_chromedriver             0x0000000104b3f555 undetected_chromedriver + 1119573
+4   undetected_chromedriver             0x0000000104b0f0d2 undetected_chromedriver + 921810
+5   undetected_chromedriver             0x0000000104b3655e undetected_chromedriver + 1082718
+6   undetected_chromedriver             0x0000000104b0eea3 undetected_chromedriver + 921251
+7   undetected_chromedriver             0x0000000104adb39a undetected_chromedriver + 709530
+8   undetected_chromedriver             0x0000000104adc061 undetected_chromedriver + 712801
+9   undetected_chromedriver             0x00000001050017b0 undetected_chromedriver + 6109104
+10  undetected_chromedriver             0x0000000105005635 undetected_chromedriver + 6125109
+11  undetected_chromedriver             0x0000000104fdcc67 undetected_chromedriver + 5958759
+12  undetected_chromedriver             0x00000001050060af undetected_chromedriver + 6127791
+13  undetected_chromedriver             0x0000000104fcbfe4 undetected_chromedriver + 5890020
+14  undetected_chromedriver             0x0000000105028258 undetected_chromedriver + 6267480
+15  undetected_chromedriver             0x000000010502841c undetected_chromedriver + 6267932
+16  undetected_chromedriver             0x000000010503abe1 undetected_chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-24 21:30:41 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_8909_cli
+2025-09-24 21:30:41 | INFO     | gsb_selenium.core.gsb:run_search_session:132 - Search session completed for instance cli
+2025-09-24 21:30:41 | INFO     | gsb_selenium.utils.profile_manager:cleanup_all_profiles:369 - Cleaned up all profiles for instance cli
+2025-09-24 21:30:41 | INFO     | gsb_selenium.cli:run:97 - Search session completed successfully
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:239 - Configuration validation:
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:240 -   Search term: marketing services
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:241 -   Target website: quizlet.com
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:242 -   Headless mode: False
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:243 -   Screenshots: True
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:244 -   Human behavior: True
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:245 -   Use undetected Chrome: True
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:246 -   CAPTCHA solver: Enabled
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:247 -   MongoDB: Enabled
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:250 -   Proxy: us-pr.oxylabs.io
+2025-09-24 21:33:40 | INFO     | gsb_selenium.cli:validate_config:254 - Configuration validation completed
+2025-09-24 21:33:49 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:33:49 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=True
+2025-09-24 21:33:51 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:33:51 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:33:51 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:33:51 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:33:51 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-24 21:33:51 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:33:51 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-24 21:33:51 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-24 21:33:51 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_9158_cli
+2025-09-24 21:34:06 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_9158_cli
+2025-09-24 21:34:06 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:35:19 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:35:19 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-24 21:35:21 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:35:21 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:35:21 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:35:21 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:35:21 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-24 21:35:21 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:35:21 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 10 searches
+2025-09-24 21:35:21 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/10
+2025-09-24 21:35:21 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_6481_cli
+2025-09-24 21:35:32 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:157 - Created stealth driver with profile: Profile_6481_cli
+2025-09-24 21:35:32 | INFO     | gsb_selenium.core.gsb:_perform_google_search:168 - Navigating to Google
+2025-09-24 21:35:36 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_6481_cli
+2025-09-24 21:35:36 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:43:13 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:43:13 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-24 21:43:16 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:43:16 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:43:16 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:43:16 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:43:16 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-24 21:43:16 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:43:16 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 10 searches
+2025-09-24 21:43:16 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/10
+2025-09-24 21:43:16 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_6266_cli
+2025-09-24 21:43:16 | ERROR    | gsb_selenium.core.gsb:_create_stealth_driver:165 - Failed to create stealth driver: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:43:16 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:43:16 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_6266_cli
+2025-09-24 21:43:16 | INFO     | gsb_selenium.core.gsb:_wait_between_searches:291 - Waiting 122.0s before next search
+2025-09-24 21:43:20 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:50:25 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-24 21:50:25 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-24 21:50:27 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:50:27 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:50:27 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:50:27 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:50:27 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-24 21:50:27 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-24 21:50:27 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 8 searches
+2025-09-24 21:50:27 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/8
+2025-09-24 21:50:27 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_3860_cli
+2025-09-24 21:50:27 | ERROR    | gsb_selenium.core.gsb:_create_stealth_driver:165 - Failed to create stealth driver: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:50:27 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:50:27 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_3860_cli
+2025-09-24 21:50:27 | INFO     | gsb_selenium.core.gsb:_wait_between_searches:291 - Waiting 102.3s before next search
+2025-09-24 21:52:10 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 2/8
+2025-09-24 21:52:10 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_8220_cli
+2025-09-24 21:52:10 | ERROR    | gsb_selenium.core.gsb:_create_stealth_driver:165 - Failed to create stealth driver: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:52:10 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 2 failed: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:52:10 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_8220_cli
+2025-09-24 21:52:10 | INFO     | gsb_selenium.core.gsb:_wait_between_searches:291 - Waiting 92.2s before next search
+2025-09-24 21:53:42 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 3/8
+2025-09-24 21:53:42 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_1298_cli
+2025-09-24 21:53:42 | ERROR    | gsb_selenium.core.gsb:_create_stealth_driver:165 - Failed to create stealth driver: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:53:42 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 3 failed: cannot access local variable 'driver' where it is not associated with a value
+2025-09-24 21:53:42 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_1298_cli
+2025-09-24 21:53:42 | INFO     | gsb_selenium.core.gsb:_wait_between_searches:291 - Waiting 106.1s before next search
+2025-09-24 21:54:33 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-24 21:56:11 | INFO     | gsb_selenium.cli:test_browser:265 - Testing browser setup...
+2025-09-24 21:56:16 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-24 21:56:16 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-24 21:56:16 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-24 21:56:16 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-24 21:56:16 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-24 21:56:16 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance browser_test initialized
+2025-09-24 21:56:16 | INFO     | gsb_selenium.cli:test_browser:271 - Creating test browser instance
+2025-09-24 21:56:16 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:80 - Created enhanced Chrome user data directory: Profile_4582_browser_test
+2025-09-25 02:28:47 | ERROR    | gsb_selenium.cli:test_proxy:343 - Proxy test failed with error: No module named 'blinker._saferef'
+2025-09-25 02:29:48 | INFO     | gsb_selenium.cli:test_proxy:313 - Testing Oxylabs proxy connection to pr.oxylabs.io:7777
+2025-09-25 02:29:48 | INFO     | gsb_selenium.cli:test_proxy:314 - Username: test
+2025-09-25 02:29:48 | INFO     | gsb_selenium.utils.proxy_tester:run_full_proxy_test:193 - Starting comprehensive Oxylabs proxy test...
+2025-09-25 02:30:02 | INFO     | gsb_selenium.utils.proxy_tester:test_proxy_connection:54 - Testing proxy connection to ip.oxylabs.io...
+2025-09-25 02:30:05 | ERROR    | gsb_selenium.utils.proxy_tester:test_proxy_connection:71 - Could not extract IP address from response
+2025-09-25 02:30:12 | INFO     | gsb_selenium.utils.proxy_tester:test_google_search_with_proxy:135 - Testing Google search with proxy: 'test search'
+2025-09-25 02:30:16 | ERROR    | gsb_selenium.utils.proxy_tester:test_google_search_with_proxy:166 - Google search test failed: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="q"]"}
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+0   chromedriver                        0x0000000103241908 chromedriver + 6379784
+1   chromedriver                        0x000000010323900a chromedriver + 6344714
+2   chromedriver                        0x0000000102c94df0 chromedriver + 429552
+3   chromedriver                        0x0000000102ce6fd5 chromedriver + 765909
+4   chromedriver                        0x0000000102ce7291 chromedriver + 766609
+5   chromedriver                        0x0000000102d37204 chromedriver + 1094148
+6   chromedriver                        0x0000000102d0d0fd chromedriver + 921853
+7   chromedriver                        0x0000000102d3455e chromedriver + 1082718
+8   chromedriver                        0x0000000102d0cea3 chromedriver + 921251
+9   chromedriver                        0x0000000102cd939a chromedriver + 709530
+10  chromedriver                        0x0000000102cda061 chromedriver + 712801
+11  chromedriver                        0x00000001031ff7b0 chromedriver + 6109104
+12  chromedriver                        0x0000000103203635 chromedriver + 6125109
+13  chromedriver                        0x00000001031dac67 chromedriver + 5958759
+14  chromedriver                        0x00000001032040af chromedriver + 6127791
+15  chromedriver                        0x00000001031c9fe4 chromedriver + 5890020
+16  chromedriver                        0x0000000103226258 chromedriver + 6267480
+17  chromedriver                        0x000000010322641c chromedriver + 6267932
+18  chromedriver                        0x0000000103238be1 chromedriver + 6343649
+19  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 02:30:16 | ERROR    | gsb_selenium.utils.proxy_tester:run_full_proxy_test:209 - All proxy tests failed
+2025-09-25 02:30:16 | INFO     | gsb_selenium.cli:test_proxy:320 - 
+==================================================
+2025-09-25 02:30:16 | INFO     | gsb_selenium.cli:test_proxy:321 - PROXY TEST RESULTS
+2025-09-25 02:30:16 | INFO     | gsb_selenium.cli:test_proxy:322 - ==================================================
+2025-09-25 02:30:16 | INFO     | gsb_selenium.cli:test_proxy:329 - ❌ Proxy Connection: Could not extract IP address from proxy response
+2025-09-25 02:30:16 | INFO     | gsb_selenium.cli:test_proxy:329 - ❌ Google Search: Google search test failed: Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="q"]"}
+  (Session info: chrome=140.0.7339.187); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Stacktrace:
+0   chromedriver                        0x0000000103241908 chromedriver + 6379784
+1   chromedriver                        0x000000010323900a chromedriver + 6344714
+2   chromedriver                        0x0000000102c94df0 chromedriver + 429552
+3   chromedriver                        0x0000000102ce6fd5 chromedriver + 765909
+4   chromedriver                        0x0000000102ce7291 chromedriver + 766609
+5   chromedriver                        0x0000000102d37204 chromedriver + 1094148
+6   chromedriver                        0x0000000102d0d0fd chromedriver + 921853
+7   chromedriver                        0x0000000102d3455e chromedriver + 1082718
+8   chromedriver                        0x0000000102d0cea3 chromedriver + 921251
+9   chromedriver                        0x0000000102cd939a chromedriver + 709530
+10  chromedriver                        0x0000000102cda061 chromedriver + 712801
+11  chromedriver                        0x00000001031ff7b0 chromedriver + 6109104
+12  chromedriver                        0x0000000103203635 chromedriver + 6125109
+13  chromedriver                        0x00000001031dac67 chromedriver + 5958759
+14  chromedriver                        0x00000001032040af chromedriver + 6127791
+15  chromedriver                        0x00000001031c9fe4 chromedriver + 5890020
+16  chromedriver                        0x0000000103226258 chromedriver + 6267480
+17  chromedriver                        0x000000010322641c chromedriver + 6267932
+18  chromedriver                        0x0000000103238be1 chromedriver + 6343649
+19  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 02:30:16 | ERROR    | gsb_selenium.cli:test_proxy:339 - 
+❌ All proxy tests failed. Please check your credentials and configuration.
+2025-09-25 02:30:31 | INFO     | gsb_selenium.cli:test_browser:265 - Testing browser setup...
+2025-09-25 02:30:37 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 02:30:37 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 02:30:37 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 02:30:37 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 02:30:37 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 02:30:37 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance browser_test initialized
+2025-09-25 02:30:37 | INFO     | gsb_selenium.cli:test_browser:271 - Creating test browser instance
+2025-09-25 02:30:37 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:80 - Created enhanced Chrome user data directory: Profile_6120_browser_test
+2025-09-25 02:31:49 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:161 - Created stealth driver with profile: Profile_6120_browser_test
+2025-09-25 02:31:49 | INFO     | gsb_selenium.cli:test_browser:275 - Testing Google navigation
+2025-09-25 02:31:50 | INFO     | gsb_selenium.cli:test_browser:281 - Browser test completed successfully
+2025-09-25 02:31:51 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_6120_browser_test
+2025-09-25 02:31:52 | INFO     | gsb_selenium.cli:test_proxy:313 - Testing Oxylabs proxy connection to pr.oxylabs.io:7777
+2025-09-25 02:31:52 | INFO     | gsb_selenium.cli:test_proxy:314 - Username: test
+2025-09-25 02:31:52 | INFO     | gsb_selenium.utils.proxy_tester:run_full_proxy_test:193 - Starting comprehensive Oxylabs proxy test...
+2025-09-25 02:31:59 | INFO     | gsb_selenium.utils.proxy_tester:test_proxy_connection:54 - Testing proxy connection to ip.oxylabs.io...
+2025-09-25 02:32:14 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 02:32:14 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-25 02:32:16 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 02:32:16 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 02:32:16 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 02:32:16 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 02:32:16 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 02:32:16 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 02:32:16 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 8 searches
+2025-09-25 02:32:16 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/8
+2025-09-25 02:32:16 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_6207_cli
+2025-09-25 02:32:27 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:161 - Created stealth driver with profile: Profile_6207_cli
+2025-09-25 02:32:27 | INFO     | gsb_selenium.core.gsb:_perform_google_search:172 - Navigating to Google
+2025-09-25 02:32:46 | ERROR    | gsb_selenium.core.gsb:_perform_google_search:216 - Error performing Google search: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   chromedriver                        0x000000010264d908 chromedriver + 6379784
+1   chromedriver                        0x000000010264500a chromedriver + 6344714
+2   chromedriver                        0x00000001020a0c33 chromedriver + 429107
+3   chromedriver                        0x0000000102149555 chromedriver + 1119573
+4   chromedriver                        0x00000001021190d2 chromedriver + 921810
+5   chromedriver                        0x000000010214055e chromedriver + 1082718
+6   chromedriver                        0x0000000102118ea3 chromedriver + 921251
+7   chromedriver                        0x00000001020e539a chromedriver + 709530
+8   chromedriver                        0x00000001020e6061 chromedriver + 712801
+9   chromedriver                        0x000000010260b7b0 chromedriver + 6109104
+10  chromedriver                        0x000000010260f635 chromedriver + 6125109
+11  chromedriver                        0x00000001025e6c67 chromedriver + 5958759
+12  chromedriver                        0x00000001026100af chromedriver + 6127791
+13  chromedriver                        0x00000001025d5fe4 chromedriver + 5890020
+14  chromedriver                        0x0000000102632258 chromedriver + 6267480
+15  chromedriver                        0x000000010263241c chromedriver + 6267932
+16  chromedriver                        0x0000000102644be1 chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 02:32:46 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   chromedriver                        0x000000010264d908 chromedriver + 6379784
+1   chromedriver                        0x000000010264500a chromedriver + 6344714
+2   chromedriver                        0x00000001020a0c33 chromedriver + 429107
+3   chromedriver                        0x0000000102149555 chromedriver + 1119573
+4   chromedriver                        0x00000001021190d2 chromedriver + 921810
+5   chromedriver                        0x000000010214055e chromedriver + 1082718
+6   chromedriver                        0x0000000102118ea3 chromedriver + 921251
+7   chromedriver                        0x00000001020e539a chromedriver + 709530
+8   chromedriver                        0x00000001020e6061 chromedriver + 712801
+9   chromedriver                        0x000000010260b7b0 chromedriver + 6109104
+10  chromedriver                        0x000000010260f635 chromedriver + 6125109
+11  chromedriver                        0x00000001025e6c67 chromedriver + 5958759
+12  chromedriver                        0x00000001026100af chromedriver + 6127791
+13  chromedriver                        0x00000001025d5fe4 chromedriver + 5890020
+14  chromedriver                        0x0000000102632258 chromedriver + 6267480
+15  chromedriver                        0x000000010263241c chromedriver + 6267932
+16  chromedriver                        0x0000000102644be1 chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 02:32:48 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 02:38:27 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 02:38:27 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-25 02:38:29 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 02:38:29 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 02:38:29 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 02:38:29 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 02:38:29 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 02:38:29 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 02:38:29 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 7 searches
+2025-09-25 02:38:29 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/7
+2025-09-25 02:38:30 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_8862_cli
+2025-09-25 02:38:41 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:161 - Created stealth driver with profile: Profile_8862_cli
+2025-09-25 02:38:41 | INFO     | gsb_selenium.core.gsb:_perform_google_search:172 - Navigating to Google
+2025-09-25 02:38:47 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_8862_cli
+2025-09-25 02:38:47 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:02:53 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:02:53 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=None, headless=False
+2025-09-25 17:02:56 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:02:56 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:02:56 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:02:56 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:02:56 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:02:56 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:02:56 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 7 searches
+2025-09-25 17:02:56 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/7
+2025-09-25 17:02:56 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_4798_cli
+2025-09-25 17:03:08 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_4798_cli
+2025-09-25 17:03:08 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:03:22 | ERROR    | gsb_selenium.core.gsb:_perform_google_search:215 - Error performing Google search: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   chromedriver                        0x0000000104fe3908 chromedriver + 6379784
+1   chromedriver                        0x0000000104fdb00a chromedriver + 6344714
+2   chromedriver                        0x0000000104a36c33 chromedriver + 429107
+3   chromedriver                        0x0000000104adf555 chromedriver + 1119573
+4   chromedriver                        0x0000000104aaf0d2 chromedriver + 921810
+5   chromedriver                        0x0000000104ad655e chromedriver + 1082718
+6   chromedriver                        0x0000000104aaeea3 chromedriver + 921251
+7   chromedriver                        0x0000000104a7b39a chromedriver + 709530
+8   chromedriver                        0x0000000104a7c061 chromedriver + 712801
+9   chromedriver                        0x0000000104fa17b0 chromedriver + 6109104
+10  chromedriver                        0x0000000104fa5635 chromedriver + 6125109
+11  chromedriver                        0x0000000104f7cc67 chromedriver + 5958759
+12  chromedriver                        0x0000000104fa60af chromedriver + 6127791
+13  chromedriver                        0x0000000104f6bfe4 chromedriver + 5890020
+14  chromedriver                        0x0000000104fc8258 chromedriver + 6267480
+15  chromedriver                        0x0000000104fc841c chromedriver + 6267932
+16  chromedriver                        0x0000000104fdabe1 chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 17:03:22 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   chromedriver                        0x0000000104fe3908 chromedriver + 6379784
+1   chromedriver                        0x0000000104fdb00a chromedriver + 6344714
+2   chromedriver                        0x0000000104a36c33 chromedriver + 429107
+3   chromedriver                        0x0000000104adf555 chromedriver + 1119573
+4   chromedriver                        0x0000000104aaf0d2 chromedriver + 921810
+5   chromedriver                        0x0000000104ad655e chromedriver + 1082718
+6   chromedriver                        0x0000000104aaeea3 chromedriver + 921251
+7   chromedriver                        0x0000000104a7b39a chromedriver + 709530
+8   chromedriver                        0x0000000104a7c061 chromedriver + 712801
+9   chromedriver                        0x0000000104fa17b0 chromedriver + 6109104
+10  chromedriver                        0x0000000104fa5635 chromedriver + 6125109
+11  chromedriver                        0x0000000104f7cc67 chromedriver + 5958759
+12  chromedriver                        0x0000000104fa60af chromedriver + 6127791
+13  chromedriver                        0x0000000104f6bfe4 chromedriver + 5890020
+14  chromedriver                        0x0000000104fc8258 chromedriver + 6267480
+15  chromedriver                        0x0000000104fc841c chromedriver + 6267932
+16  chromedriver                        0x0000000104fdabe1 chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 17:03:23 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_4798_cli
+2025-09-25 17:03:23 | INFO     | gsb_selenium.core.gsb:_wait_between_searches:290 - Waiting 81.4s before next search
+2025-09-25 17:03:24 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:05:11 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:05:11 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:05:13 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:05:14 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:05:14 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:05:14 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:05:14 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:05:14 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:05:14 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:05:14 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:05:14 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_9109_cli
+2025-09-25 17:05:23 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_9109_cli
+2025-09-25 17:05:23 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:05:30 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_9109_cli
+2025-09-25 17:05:30 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:07:32 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:07:32 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:07:34 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:07:35 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:07:35 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:07:35 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:07:35 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:07:35 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:07:35 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:07:35 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:07:35 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_5296_cli
+2025-09-25 17:07:46 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_5296_cli
+2025-09-25 17:07:46 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:07:49 | WARNING  | gsb_selenium.utils.profile_manager:cleanup_profile:359 - Failed to cleanup profile: [Errno 66] Directory not empty: PosixPath('/var/folders/df/nm76zb1s7dz82321v7dx66z80000gq/T/gsb_selenium_profiles/Profile_5296_cli')
+2025-09-25 17:07:49 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:07:58 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:07:58 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:08:00 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:08:00 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:08:00 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:08:00 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:08:00 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:08:00 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:08:00 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:08:00 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:08:00 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_6704_cli
+2025-09-25 17:08:11 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_6704_cli
+2025-09-25 17:08:11 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:08:15 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_6704_cli
+2025-09-25 17:08:15 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:08:48 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:08:48 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:08:50 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:08:50 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:08:50 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:08:50 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:08:50 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:08:50 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:08:50 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:08:50 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:08:50 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_7917_cli
+2025-09-25 17:09:00 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_7917_cli
+2025-09-25 17:09:00 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:09:14 | INFO     | gsb_selenium.core.gsb:_perform_google_search:185 - Searching for: social media marketing test
+2025-09-25 17:09:45 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_7917_cli
+2025-09-25 17:09:45 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:11:38 | INFO     | gsb_selenium.cli:test_browser:265 - Testing browser setup...
+2025-09-25 17:11:42 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:11:42 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:11:42 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:11:42 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:11:42 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 17:11:42 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance browser_test initialized
+2025-09-25 17:11:42 | INFO     | gsb_selenium.cli:test_browser:271 - Creating test browser instance
+2025-09-25 17:11:42 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:80 - Created enhanced Chrome user data directory: Profile_3882_browser_test
+2025-09-25 17:11:48 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:11:48 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:11:50 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:11:50 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:11:50 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:11:50 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:11:50 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 17:11:50 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:11:50 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:11:50 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:11:50 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_2891_cli
+2025-09-25 17:11:59 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_2891_cli
+2025-09-25 17:11:59 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:12:06 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_2891_cli
+2025-09-25 17:12:06 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:15:46 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:15:46 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:15:49 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:15:49 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:15:49 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:15:49 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:15:49 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:15:49 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:15:49 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:15:49 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:15:49 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_3712_cli
+2025-09-25 17:16:00 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_3712_cli
+2025-09-25 17:16:00 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:16:16 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_3712_cli
+2025-09-25 17:16:16 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:22:30 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:22:30 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:22:32 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:22:32 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:22:32 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:22:32 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:22:32 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:22:32 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:22:32 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:22:32 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:22:32 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_7031_cli
+2025-09-25 17:22:44 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_7031_cli
+2025-09-25 17:22:44 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:23:07 | INFO     | gsb_selenium.core.gsb:_perform_google_search:185 - Searching for: digital transformation test
+2025-09-25 17:23:54 | ERROR    | gsb_selenium.core.gsb:_perform_google_search:212 - Timeout waiting for Google search elements
+2025-09-25 17:23:54 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000104d90908 chromedriver + 6379784
+1   chromedriver                        0x0000000104d8800a chromedriver + 6344714
+2   chromedriver                        0x00000001047e3df0 chromedriver + 429552
+3   chromedriver                        0x0000000104835fd5 chromedriver + 765909
+4   chromedriver                        0x0000000104836291 chromedriver + 766609
+5   chromedriver                        0x0000000104886204 chromedriver + 1094148
+6   chromedriver                        0x000000010485c0fd chromedriver + 921853
+7   chromedriver                        0x000000010488355e chromedriver + 1082718
+8   chromedriver                        0x000000010485bea3 chromedriver + 921251
+9   chromedriver                        0x000000010482839a chromedriver + 709530
+10  chromedriver                        0x0000000104829061 chromedriver + 712801
+11  chromedriver                        0x0000000104d4e7b0 chromedriver + 6109104
+12  chromedriver                        0x0000000104d52635 chromedriver + 6125109
+13  chromedriver                        0x0000000104d29c67 chromedriver + 5958759
+14  chromedriver                        0x0000000104d530af chromedriver + 6127791
+15  chromedriver                        0x0000000104d18fe4 chromedriver + 5890020
+16  chromedriver                        0x0000000104d75258 chromedriver + 6267480
+17  chromedriver                        0x0000000104d7541c chromedriver + 6267932
+18  chromedriver                        0x0000000104d87be1 chromedriver + 6343649
+19  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+20  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 17:23:55 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_7031_cli
+2025-09-25 17:23:55 | INFO     | gsb_selenium.core.gsb:run_search_session:132 - Search session completed for instance cli
+2025-09-25 17:23:55 | INFO     | gsb_selenium.utils.profile_manager:cleanup_all_profiles:369 - Cleaned up all profiles for instance cli
+2025-09-25 17:23:55 | INFO     | gsb_selenium.cli:run:97 - Search session completed successfully
+2025-09-25 17:25:38 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:25:38 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:25:41 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:25:41 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:25:41 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:25:41 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:25:41 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 17:25:41 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:25:41 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:25:41 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:25:41 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_5173_cli
+2025-09-25 17:25:51 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_5173_cli
+2025-09-25 17:25:51 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:25:57 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_5173_cli
+2025-09-25 17:25:57 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:26:08 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:26:08 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:26:10 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:26:10 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:26:10 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:26:10 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:26:10 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:26:10 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:26:10 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:26:10 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:26:10 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_9323_cli
+2025-09-25 17:26:21 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_9323_cli
+2025-09-25 17:26:21 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:26:25 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_9323_cli
+2025-09-25 17:26:25 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:42:12 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:42:12 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:42:15 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:42:15 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:42:15 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:42:15 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:42:15 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:42:15 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:42:15 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:42:15 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:42:15 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_9542_cli
+2025-09-25 17:42:25 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_9542_cli
+2025-09-25 17:42:25 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:42:46 | INFO     | gsb_selenium.core.gsb:_perform_google_search:185 - Searching for: digital marketing services test
+2025-09-25 17:43:10 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_9542_cli
+2025-09-25 17:43:10 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:47:26 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:47:26 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:47:28 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:47:29 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:47:29 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:47:29 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:47:29 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 17:47:29 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:47:29 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:47:29 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:47:29 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_1082_cli
+2025-09-25 17:47:40 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_1082_cli
+2025-09-25 17:47:40 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:47:45 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_1082_cli
+2025-09-25 17:47:45 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:48:05 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:48:05 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:48:07 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:48:07 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:48:07 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:48:07 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:48:07 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 17:48:07 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:48:07 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:48:07 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:48:07 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_7520_cli
+2025-09-25 17:48:18 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_7520_cli
+2025-09-25 17:48:18 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:48:21 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_7520_cli
+2025-09-25 17:48:21 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:50:10 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:50:10 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:50:13 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:50:13 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:50:13 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:50:13 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:50:13 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:50:13 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:50:13 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:50:13 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:50:13 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_8555_cli
+2025-09-25 17:50:23 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_8555_cli
+2025-09-25 17:50:23 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:50:49 | ERROR    | gsb_selenium.core.gsb:_perform_google_search:215 - Error performing Google search: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   chromedriver                        0x000000010325e908 chromedriver + 6379784
+1   chromedriver                        0x000000010325600a chromedriver + 6344714
+2   chromedriver                        0x0000000102cb1c33 chromedriver + 429107
+3   chromedriver                        0x0000000102d5a555 chromedriver + 1119573
+4   chromedriver                        0x0000000102d2a0d2 chromedriver + 921810
+5   chromedriver                        0x0000000102d5155e chromedriver + 1082718
+6   chromedriver                        0x0000000102d29ea3 chromedriver + 921251
+7   chromedriver                        0x0000000102cf639a chromedriver + 709530
+8   chromedriver                        0x0000000102cf7061 chromedriver + 712801
+9   chromedriver                        0x000000010321c7b0 chromedriver + 6109104
+10  chromedriver                        0x0000000103220635 chromedriver + 6125109
+11  chromedriver                        0x00000001031f7c67 chromedriver + 5958759
+12  chromedriver                        0x00000001032210af chromedriver + 6127791
+13  chromedriver                        0x00000001031e6fe4 chromedriver + 5890020
+14  chromedriver                        0x0000000103243258 chromedriver + 6267480
+15  chromedriver                        0x000000010324341c chromedriver + 6267932
+16  chromedriver                        0x0000000103255be1 chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 17:50:49 | ERROR    | gsb_selenium.core.gsb:run_search_session:115 - Search 1 failed: Message: move target out of bounds
+  (Session info: chrome=140.0.7339.187)
+Stacktrace:
+0   chromedriver                        0x000000010325e908 chromedriver + 6379784
+1   chromedriver                        0x000000010325600a chromedriver + 6344714
+2   chromedriver                        0x0000000102cb1c33 chromedriver + 429107
+3   chromedriver                        0x0000000102d5a555 chromedriver + 1119573
+4   chromedriver                        0x0000000102d2a0d2 chromedriver + 921810
+5   chromedriver                        0x0000000102d5155e chromedriver + 1082718
+6   chromedriver                        0x0000000102d29ea3 chromedriver + 921251
+7   chromedriver                        0x0000000102cf639a chromedriver + 709530
+8   chromedriver                        0x0000000102cf7061 chromedriver + 712801
+9   chromedriver                        0x000000010321c7b0 chromedriver + 6109104
+10  chromedriver                        0x0000000103220635 chromedriver + 6125109
+11  chromedriver                        0x00000001031f7c67 chromedriver + 5958759
+12  chromedriver                        0x00000001032210af chromedriver + 6127791
+13  chromedriver                        0x00000001031e6fe4 chromedriver + 5890020
+14  chromedriver                        0x0000000103243258 chromedriver + 6267480
+15  chromedriver                        0x000000010324341c chromedriver + 6267932
+16  chromedriver                        0x0000000103255be1 chromedriver + 6343649
+17  libsystem_pthread.dylib             0x00007ff800e4b202 _pthread_start + 99
+18  libsystem_pthread.dylib             0x00007ff800e46bab thread_start + 15
+
+2025-09-25 17:50:50 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_8555_cli
+2025-09-25 17:50:50 | INFO     | gsb_selenium.core.gsb:run_search_session:132 - Search session completed for instance cli
+2025-09-25 17:50:50 | INFO     | gsb_selenium.utils.profile_manager:cleanup_all_profiles:369 - Cleaned up all profiles for instance cli
+2025-09-25 17:50:50 | INFO     | gsb_selenium.cli:run:97 - Search session completed successfully
+2025-09-25 17:53:06 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:53:06 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:53:08 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:53:08 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:53:08 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:53:08 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:53:08 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:53:08 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:53:08 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:53:08 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:53:08 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_5026_cli
+2025-09-25 17:53:22 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_5026_cli
+2025-09-25 17:53:22 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:53:42 | INFO     | gsb_selenium.core.gsb:_perform_google_search:185 - Searching for: marketing automation test
+2025-09-25 17:54:13 | INFO     | gsb_selenium.utils.profile_manager:cleanup_profile:357 - Cleaned up user data directory: Profile_5026_cli
+2025-09-25 17:54:13 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:54:59 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:54:59 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:55:01 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:55:01 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:55:01 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:55:01 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:55:01 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap...
+2025-09-25 17:55:01 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:55:01 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:55:01 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:55:01 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_9618_cli
+2025-09-25 17:55:11 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_9618_cli
+2025-09-25 17:55:11 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:55:31 | INFO     | gsb_selenium.core.gsb:_perform_google_search:185 - Searching for: affiliate marketing test
+2025-09-25 17:55:41 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
+2025-09-25 17:57:12 | INFO     | gsb_selenium.cli:run:90 - Starting GSB-Selenium instance: cli
+2025-09-25 17:57:12 | INFO     | gsb_selenium.cli:run:91 - Configuration: searches=1, headless=False
+2025-09-25 17:57:15 | INFO     | gsb_selenium.utils.mongo_search_manager:_connect:58 - Connected to MongoDB: gsb_pydoll.search_terms
+2025-09-25 17:57:15 | INFO     | gsb_selenium.utils.mongo_search_manager:_load_terms:98 - Loaded 40 search terms from MongoDB
+2025-09-25 17:57:15 | INFO     | gsb_selenium.utils.captcha_solver:__init__:26 - 2captcha CAPTCHA solver initialized
+2025-09-25 17:57:15 | INFO     | gsb_selenium.core.gsb:__init__:46 - 2Captcha solver initialized successfully
+2025-09-25 17:57:15 | INFO     | gsb_selenium.core.gsb:__init__:58 - User agent selected for session: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWeb...
+2025-09-25 17:57:15 | INFO     | gsb_selenium.core.gsb:__init__:60 - GSB-Selenium instance cli initialized
+2025-09-25 17:57:15 | INFO     | gsb_selenium.core.gsb:run_search_session:69 - Starting search session with 1 searches
+2025-09-25 17:57:15 | INFO     | gsb_selenium.core.gsb:run_search_session:81 - Starting search 1/1
+2025-09-25 17:57:15 | INFO     | gsb_selenium.utils.profile_manager:create_random_profile:78 - Created proxy-compatible Chrome user data directory: Profile_6831_cli
+2025-09-25 17:57:25 | INFO     | gsb_selenium.core.gsb:_create_stealth_driver:160 - Created stealth driver with profile: Profile_6831_cli
+2025-09-25 17:57:25 | INFO     | gsb_selenium.core.gsb:_perform_google_search:171 - Navigating to Google
+2025-09-25 17:57:46 | INFO     | gsb_selenium.core.gsb:_perform_google_search:185 - Searching for: ppc advertising test
+2025-09-25 17:58:11 | INFO     | gsb_selenium.cli:run:100 - Search session interrupted by user
