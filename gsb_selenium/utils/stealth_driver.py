@@ -61,6 +61,23 @@ class StealthDriver:
     def _create_chrome_options(self) -> ChromeOptions:
         """Create Chrome options with stealth features."""
         options = wire_webdriver.ChromeOptions()
+
+        import sys
+        if sys.platform == "darwin":
+            # macOS default Chrome install location
+            options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+        elif sys.platform.startswith("linux"):
+            # Common Linux Chrome install locations
+            possible_binaries = [
+                "/usr/bin/google-chrome",
+                "/usr/bin/google-chrome-stable",
+                "/opt/google/chrome/google-chrome"
+            ]
+            for bin_path in possible_binaries:
+                import os
+                if os.path.exists(bin_path):
+                    options.binary_location = bin_path
+                    break
         
         # Headless mode
         if self.config.headless:
