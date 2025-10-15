@@ -132,7 +132,7 @@ class GoogleSearchBot:
             print(self.driver.execute_script("return navigator.userAgent;"))
             # Navigate to Google
             logger.info("Navigating to Google")
-            self.driver.get("https://antcpt.com/score_detector/")
+            self.driver.get("https://2captcha.com/demo/recaptcha-v3")
 
             # sleep for 10 seconds
             time.sleep(1000)

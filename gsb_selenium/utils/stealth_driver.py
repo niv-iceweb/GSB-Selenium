@@ -39,11 +39,15 @@ class StealthDriver:
         seleniumwire_options = self._create_proxy_options()
         
         # Use selenium-wire for proxy support (always used since proxy is hardcoded)
-        # service = Service(ChromeDriverManager().install())
+        service = Service(ChromeDriverManager().install())
         self.driver = wire_webdriver.Chrome(
             options=options,
-            seleniumwire_options=seleniumwire_options
+            seleniumwire_options=seleniumwire_options,
+            service=service
         )
+
+        # log chrome driver 
+        logger.info(f"Chrome driver created: {self.driver}")
         
         # Apply selenium-stealth for comprehensive anti-detection
         # self._apply_selenium_stealth()
