@@ -73,11 +73,6 @@ class GSBConfig(BaseSettings):
     take_screenshots: bool = Field(default=True, description="Take screenshots during execution")
     human_like_behavior: bool = Field(default=True, description="Enable human-like behavior patterns")
     use_undetected_chrome: bool = Field(default=True, description="Use undetected-chromedriver for stealth")
-    
-    # Profile Configuration
-    use_profiles: bool = Field(default=True, description="Enable Chrome profile creation")
-    cleanup_profiles: bool = Field(default=True, description="Auto-cleanup profiles after use")
-    profile_template_dir: Optional[str] = Field(default=None, description="Custom template directory (optional)")
 
     @property
     def proxy_string(self) -> str:

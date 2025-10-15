@@ -17,7 +17,6 @@ from selenium_stealth import stealth
 from loguru import logger
 
 from .timing import human_sleep, typing_delay
-from .profile_manager import ChromeProfileManager
 
 
 class StealthDriver:
@@ -29,15 +28,9 @@ class StealthDriver:
         self.instance_id = instance_id
         self.driver = None
         self.user_agent = UserAgent()
-        self.profile_manager = ChromeProfileManager(config, instance_id)
-        self.current_profile = None
         
     def create_driver(self) -> webdriver.Chrome:
         """Create and configure the Chrome driver with stealth features."""
-        
-        # Create Chrome profile if enabled
-        if self.config.use_profiles:
-            self.current_profile = self.profile_manager.create_random_profile()
         
         # Configure Chrome options
         options = self._create_chrome_options()
@@ -74,16 +67,6 @@ class StealthDriver:
             user_agents = self.config.get_user_agents(self.config.proxy_country)
             selected_ua = random.choice(user_agents)
             options.add_argument(f"--user-agent={selected_ua}")
-        
-        # Profile configuration
-        if self.current_profile:
-            profile_args = self.profile_manager.get_profile_arguments(self.current_profile)
-            # log profile args
-            logger.info(f"Profile args: {profile_args}")
-            if profile_args:
-                options.add_argument(f"--user-data-dir={profile_args['user_data_dir']}")
-                options.add_argument(f"--profile-directory={profile_args['profile_directory']}")
-                logger.info(f"Using Chrome profile: {self.current_profile}")
         
         return options
     
@@ -298,11 +281,6 @@ class StealthDriver:
             self.driver.quit()
             self.driver = None
             logger.info(f"StealthDriver quit for instance {self.instance_id}")
-        
-        # Cleanup Chrome profile
-        if self.current_profile:
-            self.profile_manager.cleanup_profile(self.current_profile)
-            self.current_profile = None
     
     def __enter__(self):
         """Context manager entry."""
